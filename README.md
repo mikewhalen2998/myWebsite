@@ -1,3 +1,2 @@
 # myWebsite
-My website for Homeworktt
-[test](https://google.com)
+My website for GUI Homework 4
