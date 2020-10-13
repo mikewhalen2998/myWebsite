@@ -1,0 +1,165 @@
+<!doctype html>
+<!-- File: public_html/hw4/index.html
+     Michael Whalen
+     Michael_whalen@student.uml.edu
+     Michael Whalen Computer Science Student in 91.61 GUI Programming I Umass Lowell
+     10/10/20
+     Bootstrap re-worked website 
+     -->
+
+
+<!-- Thanks to W3 schools I was able to learn a lot the techniques I implement here. Also the crashcourse videos were very helpful -->
+<!-- A lot of inspiration for my layout came from this w3 schools example https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_blog -->
+
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <title>Michael Whalen HomePage</title>
+  </head>
+  <body class="bg-info">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+    <!-- Imported navbar from here https://getbootstrap.com/docs/3.3/components/#navbar -->
+    <nav class="navbar navbar-inverse">
+     <div class="container-fluid">
+    <!-- Creating header for navbar along with making collapsible navbar -->
+      <div class="navbar-header">
+       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+       </button>
+        <a class="navbar-brand" href="https://cs.uml.edu/~mwhalen/hw4">Michael's Webpage</a>
+     </div>
+
+    <!-- Creating dropdown here will assignments -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      <!-- Dropdown menu with all homeworks here inside the nav -->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Homeworks <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://cs.uml.edu/~mwhalen">Homework 2</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="https://cs.uml.edu/~mwhalen/hw3">Homework 3</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="https://cs.uml.edu/~mwhalen/hw4">Homework 4</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Homework 5</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Homework 6</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Homework 7</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Homework 8</a></li>
+            <li role="separator" class="divider"></li>
+          </ul>
+        </li>
+        <!-- Added some of my favorite websites through clickable buttons that bring you to each webpage -->
+         <li> <a href="https://youtube.com" target="_blank" class="btn btn-link" role="button">Youtube </a> </li>
+         <li> <a href="https://google.com" target="_blank" class="btn btn-link" role="button">Google</a> </li>
+         <li> <a href="https://spotify.com" target="_blank" class="btn btn-link" role="button">Spotify </a> </li>
+      </ul>
+      <!-- Adding contact information on the top this time instead of creating a footer. This is on the right hand side of the navbar -->
+            <ul class="nav navbar-nav navbar-right">
+             <li class="dropdown">
+             <li><a href="#">Contact Information: Michael Whalen, Student Email: Michael_Whalen@student.uml.edu</a></li>
+            </ul> <!-- collapse for the righthand side of navbar -->
+        </li> <!-- dropdown li class collapse -->
+      </ul> <!--dropdown-menu collapse -->
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav> <!-- close out navbar -->
+            
+ <!-- About me section -->
+
+<!-- Create container and row to main 12 column design structure -->
+<div class="container-fluid">
+ <div class="row equal">
+  
+ <!-- Depending on screen size adjust properly with each different column size. -->
+  <div class="col-xs-12 col-sm-12 col-md-6 ">
+  <!-- Create panel with title and content inside panel -->
+   <div class="panel panel-primary" height="50%" width="50%">
+    <div class="panel-heading"> 
+     <h1 class="panel-title">About me</h1>       
+    </div>
+     <div class="panel-body">        
+      <p class="lead"> My name is Michael Whalen. I'm a currently a Senior in Computer Science. I live in my apartment in lowell during the school semester and live at my home in Billerica during the summer. I work part-time at Market Basket. After this year I'm hoping to get a job as a back-end developer. Some languages I know are C++ and C. I've started learning Java. On the other hand I'm currently taking a database course and this GUI course, so I hope to expand my knowledge on Computer Science by taking these courses.</p>
+     </div>  <!--Panel-body collapse --> 
+    </div>  <!-- panel panel-primary collapse --> 
+   </div> <!-- About me column collapse -->
+   
+   <!-- Second part of first row. Will contain a list of cs courses I've taken along with links to each description of each course -->
+    
+   <!-- Depending on screen size adjust properly with each different column size. -->
+<div class="col-xs-12 col-sm-12 col-md-6">
+ <div class="panel panel-primary"> 
+  <div class="panel-heading" >
+   <h1 class="panel-title">Cs Courses I've Taken</h1>
+  </div> <!-- panel-heading collapse -->
+    <!-- Since I used a panel on my about me, I decided to keep the style of having panels and included a list group in the panel. I gave the list-group the color "success" because I succesfully completed these courses. -->
+    <div class="list-group">
+     <a href="https://www.uml.edu/catalog/courses/comp/1010" class="list-group-item list-group-item-success">Computing 1-4  </a>
+     <a href="https://www.uml.edu/catalog/courses/comp/2030" class="list-group-item list-group-item-success">Assembly Language Programming</a>
+     <a href="https://www.uml.edu/catalog/courses/comp/3040" class="list-group-item list-group-item-success">Foundations of Computer Science</a>
+     <a href="https://www.uml.edu/catalog/courses/comp/3050" class="list-group-item list-group-item-success">Computer Architecture </a>
+     <a href="https://www.uml.edu/catalog/courses/comp/3010" class="list-group-item list-group-item-success">Organization of Programming Languages</a>
+     <a href="https://www.uml.edu/catalog/courses/comp/3080" class="list-group-item list-group-item-success">Intro to Operating Systems</a>
+    </div> <!-- list collapse -->
+   </div> <!-- panel panel-primary collapse -->
+  </div> <!-- column collapse -->
+ </div>  <!-- Row collapse -->
+</div>    <!-- Container collapse -->
+
+
+
+<!-- Taken from https://getbootstrap.com/docs/3.4/components/#thumbnails-custom-content  Also made some of my own adjustments-->
+
+<!-- Here I'm adding my pictures as thumbnails with labels which will look a lot better than my homework 2 section with my images.-->
+<div class="container-fluid">
+ <div class="row">
+ <!-- Header for the photo section of my page -->
+ <div class="panel panel-primary"> 
+  <div class="panel-heading" >
+  <h1 class="panel-title text-primary text-center"> Photo Gallery </h1>
+  </div>
+ </div>
+  <!-- Each image here is going to take up half of the twelve column design. They both have img-responsive and % width/heights so they adjust properly when re-sized -->
+  <!-- Depending on screen size adjust properly with each different column size. -->
+  <div class="col-xs-12 col-sm-6 ">
+   <div class="thumbnail">
+    <h2 class="text-primary text-center"> My Girlfriend</h2>
+     <img src="images/kerryandmike.png" alt="My Girlfriend and I" class="img-responsive" width="50%" height="50%">
+      <div class="caption">
+       <h3 class="text-center">Kerry</h3>
+      </div> <!-- Caption collapse -->
+    </div> <!-- thumbnail collapse -->
+  </div> <!-- column collapse -->
+   
+  <div class="col-xs-12 col-sm-6">
+   <div class="thumbnail">
+    <h2 class="text-primary text-center"> My Dog </h2>
+     <img src="images/jessie.jpeg" alt="My dog" class="img-responsive" width="50%" height="50%">
+      <div class="caption">
+       <h3 class="text-center">Jessie</h3>
+      </div> <!-- caption collapse -->
+   </div> <!-- thumbnail collapse -->
+  </div> <!-- column collapse -->
+ </div> <!--row collapse -->
+</div> <!-- container-fluid collapse -->
+
+  </body>
+</html>
