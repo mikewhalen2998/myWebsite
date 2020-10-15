@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- File: public_html/hw4/index.html
+<!-- File: public_html/hw4/photos.html
      Michael Whalen
      Michael_whalen@student.uml.edu
      Michael Whalen Computer Science Student in 91.61 GUI Programming I Umass Lowell
@@ -21,7 +21,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-    <title>Michael Whalen HomePage</title>
+    <title>Photos</title>
   </head>
   <body class="bg-info">
     <!-- Optional JavaScript -->
@@ -83,22 +83,45 @@
   </div><!-- /.container-fluid -->
 </nav> <!-- close out navbar -->
 
-<!-- Home page containing a jumbotron with text explaining what this class and assignment is -->
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12">
 
-<div class="jumbotron">
-<h1> Welcome to My Website </h1>
-<img src="images/mike.jpg" alt="Picture of me" class="img-circle" width="25%" height="25%">
-<p> This website was designed for <strong>Gui I Programming at UMass Lowell </strong> </p>
-<p> This will be used as my personal website that I would like to show to future employers. </p>
-<p> Also this is my first class in web development and I want to improve my design skills through this course. </p>
 
-</div>
-</div>
-</div>
-</div>
+
+
+<!-- Taken from https://getbootstrap.com/docs/3.4/components/#thumbnails-custom-content  Also made some of my own adjustments-->
+
+<!-- Here I'm adding my pictures as thumbnails with labels which will look a lot better than my homework 2 section with my images.-->
+<div class="container-fluid">
+ <div class="row">
+ <!-- Header for the photo section of my page -->
+ <div class="panel panel-primary">
+  <div class="panel-heading" >
+  <h1 class="panel-title text-primary text-center"> Photo Gallery </h1>
+  </div>
+ </div>
+  <!-- Each image here is going to take up half of the twelve column design. They both have img-responsive and % width/heights so they adjust properly when re-sized -->
+  <!-- Depending on screen size adjust properly with each different column size. -->
+  <div class="col-xs-12 col-sm-6 ">
+   <div class="thumbnail">
+    <h2 class="text-primary text-center"> My Girlfriend</h2>
+     <img src="images/kerryandmike.png" alt="My Girlfriend and I" class="img-responsive" width="50%" height="50%">
+      <div class="caption">
+       <h3 class="text-center">Kerry</h3>
+      </div> <!-- Caption collapse -->
+    </div> <!-- thumbnail collapse -->
+  </div> <!-- column collapse -->
+
+  <div class="col-xs-12 col-sm-6">
+   <div class="thumbnail">
+    <h2 class="text-primary text-center"> My Dog </h2>
+     <img src="images/jessie.jpeg" alt="My dog" class="img-responsive" width="50%" height="50%">
+      <div class="caption">
+       <h3 class="text-center">Jessie</h3>
+      </div> <!-- caption collapse -->
+   </div> <!-- thumbnail collapse -->
+  </div> <!-- column collapse -->
+ </div> <!--row collapse -->
+</div> <!-- container-fluid collapse -->
+
 
 
   </body>

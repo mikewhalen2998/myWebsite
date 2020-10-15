@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- File: public_html/hw4/index.html
+<!-- File: public_html/hw4/aboutus.html
      Michael Whalen
      Michael_whalen@student.uml.edu
      Michael Whalen Computer Science Student in 91.61 GUI Programming I Umass Lowell
@@ -21,7 +21,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-    <title>Michael Whalen HomePage</title>
+    <title>About me</title>
   </head>
   <body class="bg-info">
     <!-- Optional JavaScript -->
@@ -71,7 +71,6 @@
         <li> <a href="https://cs.uml.edu/~mwhalen/hw4/" target="_blank" class="btn btn-link" role="button">Home </a> </li>
         <li> <a href="https://cs.uml.edu/~mwhalen/hw4/aboutus.html" target="_blank" class="btn btn-link" role="button">About me</a> </li>
         <li> <a href="https://cs.uml.edu/~mwhalen/hw4/photos.html" target="_blank" class="btn btn-link" role="button">Photos </a> </li>
-      </ul>
       <!-- Adding contact information on the top this time instead of creating a footer. This is on the right hand side of the navbar -->
             <ul class="nav navbar-nav navbar-right">
              <li class="dropdown">
@@ -83,22 +82,44 @@
   </div><!-- /.container-fluid -->
 </nav> <!-- close out navbar -->
 
-<!-- Home page containing a jumbotron with text explaining what this class and assignment is -->
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12">
+ <!-- About me section -->
 
-<div class="jumbotron">
-<h1> Welcome to My Website </h1>
-<img src="images/mike.jpg" alt="Picture of me" class="img-circle" width="25%" height="25%">
-<p> This website was designed for <strong>Gui I Programming at UMass Lowell </strong> </p>
-<p> This will be used as my personal website that I would like to show to future employers. </p>
-<p> Also this is my first class in web development and I want to improve my design skills through this course. </p>
+<!-- Create container and row to main 12 column design structure -->
+<div class="container-fluid">
+ <div class="row equal">
 
-</div>
-</div>
-</div>
-</div>
+ <!-- Depending on screen size adjust properly with each different column size. -->
+  <div class="col-xs-12 col-sm-12 col-md-12 ">
+  <!-- Create panel with title and content inside panel -->
+   <div class="panel panel-primary" height="100%" width="100%">
+    <div class="panel-heading">
+     <h1 class="panel-title">About me</h1>
+    </div>
+     <div class="panel-body">
+      <p class="lead"> My name is Michael Whalen. I'm a currently a Senior in Computer Science. I live in my apartment in lowell during the school semester and live at my home in Billerica during the summer. I work part-time at Market Basket. After this year I'm hoping to get a job as a back-end developer. Some languages I know are C++ and C. I've started learning Java. On the other hand I'm currently taking a database course and this GUI course, so I hope to expand my knowledge on Computer Science by taking these courses.</p>
+     </div>  <!--Panel-body collapse -->
+    </div>  <!-- panel panel-primary collapse -->
+  </div> <!-- About me column collapse -->
+
+  <div class="col-xs-12 col-sm-12 col-md-12">
+   <div class="panel panel-primary">
+    <div class="panel-heading" >
+     <h1 class="panel-title">Cs Courses I've Taken</h1>
+    </div> <!-- panel-heading collapse -->
+      <!-- Since I used a panel on my about me, I decided to keep the style of having panels and included a list group in the panel. I gave the list-group the color "success" because I succesfully completed these courses. -->
+      <div class="list-group">
+       <a href="https://www.uml.edu/catalog/courses/comp/1010" class="list-group-item list-group-item-success">Computing 1-4  </a>
+       <a href="https://www.uml.edu/catalog/courses/comp/2030" class="list-group-item list-group-item-success">Assembly Language Programming</a>
+       <a href="https://www.uml.edu/catalog/courses/comp/3040" class="list-group-item list-group-item-success">Foundations of Computer Science</a>
+       <a href="https://www.uml.edu/catalog/courses/comp/3050" class="list-group-item list-group-item-success">Computer Architecture </a>
+       <a href="https://www.uml.edu/catalog/courses/comp/3010" class="list-group-item list-group-item-success">Organization of Programming Languages</a>
+       <a href="https://www.uml.edu/catalog/courses/comp/3080" class="list-group-item list-group-item-success">Intro to Operating Systems</a>
+      </div> <!-- list collapse -->
+     </div> <!-- panel panel-primary collapse -->
+    </div> <!-- column collapse -->
+</div> <!-- row collapse -->
+</div> <!-- container collapse -->
+
 
 
   </body>
